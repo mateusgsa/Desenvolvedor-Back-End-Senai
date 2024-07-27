@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 12:39:51 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA3LTI3OyIxMjozMjoxNyAiOzMxMjc="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA3LTI3OyIxMjozOTo1MSAiOzE7MzI0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, result" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe uma numero inteiro: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="result" expression="num1%2"/>
+            <if expression="result=0">
+                <then>
+                    <output expression="&quot;Numero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Numero impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

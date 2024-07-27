@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 02:06:20 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA3LTI3OyIxMjo1NzozNiAiOzMxMzU="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA3LTI3OyIwMjowNjoyMCAiOzE7MzIyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota" type="Real" array="False" size=""/>
+            <output expression="&quot;Forme sua nota(0 - 100): &quot;" newline="True"/>
+            <input variable="nota"/>
+            <if expression="nota&gt;=50">
+                <then>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="nota&lt;=49 and nota&gt;=45">
+                        <then>
+                            <output expression="&quot;Conselho&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
