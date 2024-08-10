@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ex1"/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-10 11:31:46 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA4LTAzOyIwNDo0MDoyNCAiOzMxMjA="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTQtMTI0Mjk3OTsyMDI0LTA4LTAzOyIwNTozNDozMSAiOzM7MzIzMg=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7RVNONTEyTjEyNDI5OTk7MjAyNC0wOC0xMDsiMTE6MzE6NDYgIjsxOzMzMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o das variaveis"/>
+            <declare name="f, c, total" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <comment text="Recebendo a informa&#231;&#227;o do usu&#225;rio"/>
+            <output expression="&quot;Informar a temperatura em Fahrenheit: &quot;" newline="True"/>
+            <input variable="f"/>
+            <comment text="Chamando a fun&#231;&#227;o"/>
+            <assign variable="c" expression="conversao(f)"/>
+            <output expression="&quot;Temperatura em Celsius: &quot;&amp;c&amp;&quot;&#186;C&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="conversao" type="Integer" variable="total">
+        <parameters>
+            <parameter name="f" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="Fun&#231;&#227;o para convers&#227;o de temperatura"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="(f-32)/1.8"/>
+        </body>
+    </function>
+</flowgorithm>
