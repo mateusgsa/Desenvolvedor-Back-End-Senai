@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mateus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-10 06:55:50 "/>
+        <attribute name="created" value="TWF0ZXVzO0RFU0tUT1AtMzJQR1U3QjsyMDI0LTA4LTEwOyIwNjozMToyMyAiOzI4NTE="/>
+        <attribute name="edited" value="TWF0ZXVzO0RFU0tUT1AtMzJQR1U3QjsyMDI0LTA4LTEwOyIwNjo1NTo1MCAiOzE7Mjk2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, i" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="0"/>
+            <output expression="&quot;Informe um numero que desejar, para encontrar o maior numero entre 0 e nomero informado: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <declare name="num3" type="Integer" array="True" size="num1"/>
+            <for variable="i" start="0" end="num1" direction="inc" step="1">
+                <assign variable="num3[i]" expression="random(num1)"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
